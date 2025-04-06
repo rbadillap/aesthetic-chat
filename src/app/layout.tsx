@@ -29,9 +29,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      {/* Update the body className to use the new font */}
-      {/* <body className={`${GeistSans.className} text-base`}> */}
-      {/* With */}
       <body className={`${geist.variable} ${geistMono.variable} font-sans text-base`}>
         <SidebarProvider defaultOpen={false}>
           <div className="grid grid-cols-[auto_1fr] h-screen w-screen">
