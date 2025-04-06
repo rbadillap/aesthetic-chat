@@ -17,6 +17,7 @@ import {
   SidebarMenuItem,
   SidebarSeparator,
 } from "@/components/ui/sidebar"
+import Link from "next/link"
 
 // Sample conversation data
 const favoriteConversations = [
@@ -74,10 +75,10 @@ export function AppSidebar() {
             <SidebarMenu>
               <SidebarMenuItem>
                 <SidebarMenuButton asChild isActive tooltip="Home" className="text-sm">
-                  <a href="/">
+                  <Link href="/">
                     <Home className="h-4 w-4" />
                     <span>Home</span>
-                  </a>
+                  </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
               <SidebarMenuItem>
@@ -152,10 +153,10 @@ export function AppSidebar() {
               </SidebarMenuItem>
               <SidebarMenuItem>
                 <SidebarMenuButton asChild tooltip="Profile" className="text-sm">
-                  <a href="/profile">
+                  <Link href="/profile">
                     <User className="h-4 w-4" />
                     <span>Profile</span>
-                  </a>
+                  </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
             </SidebarMenu>
@@ -167,18 +168,18 @@ export function AppSidebar() {
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton asChild tooltip="About" className="text-sm">
-              <a href="/about">
+              <Link href="/about">
                 <Info className="h-4 w-4" />
                 <span>About</span>
-              </a>
+              </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
           <SidebarMenuItem>
             <SidebarMenuButton asChild tooltip="GitHub" className="text-sm">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <Link href="https://github.com/rbadillap/aesthetic-chat" target="_blank" rel="noopener noreferrer">
                 <Github className="h-4 w-4" />
                 <span>GitHub</span>
-              </a>
+              </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
